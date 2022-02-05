@@ -326,23 +326,21 @@ const j = "Hello,our name is"+ myName +",how are you";*/
 
       //Understanding Undefined Value returned from a Function
 
-      // Setup
-let sum = 0;
+      let sum = 0;
 
-function addThree() {
-  sum = sum + 3;
-}
+      function addThree() {
+        sum = sum + 3;
+      }
 
-// Only change code below this line
-function addFive(){
-  sum=sum+5;
-  return
-}
+      function addFive() {
+        sum = sum + 5;
+        return; //returning undefined
+      }
 
-// Only change code above this line
+      // Only change code above this line
 
-addThree();
-addFive();
+      addThree();
+      addFive();
     </script>
     <br />
     <input type="button" onclick="helloworld()" value="Click Here " />
