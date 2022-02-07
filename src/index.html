@@ -851,6 +851,28 @@ const myDog = {
 };
 //deleting property
 delete myDog.tails;
+
+
+//Using Objects for Lookups
+
+function phoneticLookup(val) {
+  let result = "";
+
+  // Only change code below this line
+  const lookup = {
+    "alpha": "Adams",
+    "bravo":"Boston",   
+    "charlie": "Chicago",   
+    "delta":"Denver", 
+    "echo":"Easy",  
+    "foxtrot":"Frank"
+  };
+result=lookup[val];
+  return result;
+}
+
+phoneticLookup("charlie");
+
     </script>
     <br />
     <input type="button" onclick="helloworld()" value="Click Here " />
