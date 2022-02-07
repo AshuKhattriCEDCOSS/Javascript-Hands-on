@@ -367,281 +367,263 @@ const j = "Hello,our name is"+ myName +",how are you";*/
       }
 
       //ifelse
-      function test (myCondition) {
-  if (myCondition) {
-    return "It was true";
-  }
-  return "It was false";
-}
-
-test(true);
-test(false);
-
-//Commaprision operator
-
-function equalityTest(myVal) {
-  if (myVal == 10) {
-    return "Equal";
-  }
-  return "Not Equal";
-}
-
-//Strict operator
-// Setup
-function testStrict(val) {
-  if (val===7) { // Change this line
-    return "Equal";
-  }
-  return "Not Equal";
-}
+      function test(myCondition) {
+        if (myCondition) {
+          return "It was true";
+        }
+        return "It was false";
+      }
+
+      test(true);
+      test(false);
+
+      //Commaprision operator
+
+      function equalityTest(myVal) {
+        if (myVal == 10) {
+          return "Equal";
+        }
+        return "Not Equal";
+      }
+
+      //Strict operator
+      // Setup
+      function testStrict(val) {
+        if (val === 7) {
+          // Change this line
+          return "Equal";
+        }
+        return "Not Equal";
+      }
+
+      testStrict(10);
+
+      //comparing different values
+
+      function compareEquality(a, b) {
+        if (a === b) {
+          // Change this line
+          return "Equal";
+        }
+        return "Not Equal";
+      }
+      compareEquality(10, "10");
+
+      //Comparison with the Inequality Operator
+
+      function testNotEqual(val) {
+        if (val != 99) {
+          // Change this line
+          return "Not Equal";
+        }
+        return "Equal";
+      }
+
+      testNotEqual(99);
+
+      // Comparison with the Strict Inequality Operator
+
+      function testStrictNotEqual(val) {
+        if (val !== 17) {
+          return "Not Equal";
+        }
+        return "Equal";
+      }
+      testStrictNotEqual(17);
+
+      //Comparison with the Greater Than Operator
+
+      function testGreaterThan(val) {
+        if (val > 100) {
+          return "Over 100";
+        }
+
+        if (val > 10) {
+          return "Over 10";
+        }
+
+        return "10 or Under";
+      }
+
+      testGreaterThan(0);
+      testGreaterThan(10);
+      testGreaterThan(11);
+      testGreaterThan(99);
+      testGreaterThan(100);
+      testGreaterThan(101);
+      testGreaterThan(150);
+
+      //Comparison with the Greater Than Or Equal To Operator
+
+      function testGreaterOrEqual(val) {
+        if (val >= 20) {
+          // Change this line
+          return "20 or Over";
+        }
+
+        if (val >= 10) {
+          // Change this line
+          return "10 or Over";
+        }
+
+        return "Less than 10";
+      }
 
-testStrict(10);
-
-//comparing different values
+      testGreaterOrEqual(0);
+      testGreaterOrEqual(10);
+      testGreaterOrEqual(21);
 
-function compareEquality(a, b) {
-  if (a === b) { // Change this line
-    return "Equal";
-  }
-  return "Not Equal";
-}
-compareEquality(10, "10");
+      //Comparison with the Less Than Operator
 
-//Comparison with the Inequality Operator
+      function testLessThan(val) {
+        if (val < 25) {
+          return "Under 25";
+        }
 
-function testNotEqual(val) {
-  if (val!=99) { // Change this line
-    return "Not Equal";
-  }
-  return "Equal";
-}
+        if (val < 55) {
+          return "Under 55";
+        }
 
-testNotEqual(99);
+        return "55 or Over";
+      }
 
-// Comparison with the Strict Inequality Operator
+      testLessThan(0);
+      testLessThan(24);
+
+      //Comparison with the Less Than Or Equal To Operator
 
+      function testLessOrEqual(val) {
+        if (val <= 12) {
+          // Change this line
+          return "Smaller Than or Equal to 12";
+        }
 
-function testStrictNotEqual(val) {
-  if (val!==17) { 
-    return "Not Equal";
-  }
-  return "Equal";
-}
-testStrictNotEqual(17);
-
-//Comparison with the Greater Than Operator
-
-function testGreaterThan(val) {
-  if (val>100) {  
-    return "Over 100";
-  }
-
-  if (val>10) {  
-    return "Over 10";
-  }
-
-  return "10 or Under";
-}
-
-testGreaterThan(0);
-testGreaterThan(10);
-testGreaterThan(11);
-testGreaterThan(99);
-testGreaterThan(100);
-testGreaterThan(101);
-testGreaterThan(150);
-
-//Comparison with the Greater Than Or Equal To Operator
-
-function testGreaterOrEqual(val) {
-  if (val>=20) {  // Change this line
-    return "20 or Over";
-  }
-
-  if (val>=10) {  // Change this line
-    return "10 or Over";
-  }
-
-  return "Less than 10";
-}
-
-testGreaterOrEqual(0);
-testGreaterOrEqual(10);
-testGreaterOrEqual(21);
-
-//Comparison with the Less Than Operator
-
-function testLessThan(val) {
-  if (val<25) { 
-    return "Under 25";
-  }
-
-  if (val<55) { 
-    return "Under 55";
-  }
-
-  return "55 or Over";
-}
-
-testLessThan(0);
-testLessThan(24);
-
-
-//Comparison with the Less Than Or Equal To Operator
-
-function testLessOrEqual(val) {
-  if (val<=12) {  // Change this line
-    return "Smaller Than or Equal to 12";
-  }
-
-  if (val<=24) {  // Change this line
-    return "Smaller Than or Equal to 24";
-  }
-
-  return "More Than 24";
-}
-
-testLessOrEqual(0);
-testLessOrEqual(23);
-
-//Comparisons with the Logical And Operator
-
-function testLogicalAnd(val) {
-
-if (val<=50 && val>=25) {
-    return "Yes";
-}
-return "No";
-}
-testLogicalAnd(10);
-
-
-//Comparisons with the Logical Or Operator
-
-function testLogicalOr(val) {
-
-  if (val<10 || val>20) {
-    return "Outside";
-  }
-
-  return "Inside";
-}
-
-testLogicalOr(10);
-
-//Introducing Else Statements
-
-function testElse(val) {
-  let result = "";
-
-  if (val > 5) {
-    result = "Bigger than 5";
-  }
-
-  else{
-    result = "5 or Smaller";
-  }
-
-
-  return result;
-}
-
-testElse(4);
-
-//Introducing Else If Statements
-
-function testElseIf(val) {
-  if (val > 10) {
-    return "Greater than 10";
-  }
-
-  else if (val < 5) {
-    return "Smaller than 5";
-  }
-else
-{
-  return "Between 5 and 10";
-}
-}
-
-testElseIf(7);
-
-//Logical Order in If Else Statements
-
-function orderMyLogic(val) {
- if (val < 5) {
-    return "Less than 5";
-  } 
-    else if (val < 10) {
-    return "Less than 10";
-  }else {
-    return "Greater than or equal to 10";
-  }
-}
-
-orderMyLogic(7);
-
-//Chaining If Else Statements
-
-function testSize(num) {
-
-if(num<5)
-{
-  return "Tiny"
-}
-else if(num<10)
-{
-  return "Small"
-}
-else if(num<15)
-{
-  return "Medium"
-}
-else if(num<20)
-{
-  return "Large"
-}
-else 
-{
-  return "Huge";
-}
- 
-}
-
-testSize(0);
-
-//Golf Code
-
-const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
-
-function golfScore(par, strokes) {
-
-if(strokes==1)
-{
-  return 	"Hole-in-one!"
-}
-else if(strokes<=par-2){
-  return "Eagle"
-}
-else if(strokes==par-1){
-  return "Birdie"
-}
-else if(strokes==par){
-  return "Par"
-}
-else if(strokes==par+1){
-  return "Bogey"
-}
-else if(strokes==par+2){
-  return "Double Bogey"
-}
-else if(strokes>=par+3){
-  return "Go Home!";
-}
-
-}
-
-golfScore(5, 2);
+        if (val <= 24) {
+          // Change this line
+          return "Smaller Than or Equal to 24";
+        }
+
+        return "More Than 24";
+      }
+
+      testLessOrEqual(0);
+      testLessOrEqual(23);
+
+      //Comparisons with the Logical And Operator
+
+      function testLogicalAnd(val) {
+        if (val <= 50 && val >= 25) {
+          return "Yes";
+        }
+        return "No";
+      }
+      testLogicalAnd(10);
+
+      //Comparisons with the Logical Or Operator
+
+      function testLogicalOr(val) {
+        if (val < 10 || val > 20) {
+          return "Outside";
+        }
+
+        return "Inside";
+      }
+
+      testLogicalOr(10);
+
+      //Introducing Else Statements
+
+      function testElse(val) {
+        let result = "";
+
+        if (val > 5) {
+          result = "Bigger than 5";
+        } else {
+          result = "5 or Smaller";
+        }
+
+        return result;
+      }
+
+      testElse(4);
+
+      //Introducing Else If Statements
+
+      function testElseIf(val) {
+        if (val > 10) {
+          return "Greater than 10";
+        } else if (val < 5) {
+          return "Smaller than 5";
+        } else {
+          return "Between 5 and 10";
+        }
+      }
+
+      testElseIf(7);
+
+      //Logical Order in If Else Statements
+
+      function orderMyLogic(val) {
+        if (val < 5) {
+          return "Less than 5";
+        } else if (val < 10) {
+          return "Less than 10";
+        } else {
+          return "Greater than or equal to 10";
+        }
+      }
+
+      orderMyLogic(7);
+
+      //Chaining If Else Statements
+
+      function testSize(num) {
+        if (num < 5) {
+          return "Tiny";
+        } else if (num < 10) {
+          return "Small";
+        } else if (num < 15) {
+          return "Medium";
+        } else if (num < 20) {
+          return "Large";
+        } else {
+          return "Huge";
+        }
+      }
+
+      testSize(0);
+
+      //Golf Code
+
+      const names = [
+        "Hole-in-one!",
+        "Eagle",
+        "Birdie",
+        "Par",
+        "Bogey",
+        "Double Bogey",
+        "Go Home!",
+      ];
+
+      function golfScore(par, strokes) {
+        if (strokes == 1) {
+          return "Hole-in-one!";
+        } else if (strokes <= par - 2) {
+          return "Eagle";
+        } else if (strokes == par - 1) {
+          return "Birdie";
+        } else if (strokes == par) {
+          return "Par";
+        } else if (strokes == par + 1) {
+          return "Bogey";
+        } else if (strokes == par + 2) {
+          return "Double Bogey";
+        } else if (strokes >= par + 3) {
+          return "Go Home!";
+        }
+      }
+
+      golfScore(5, 2);
     </script>
     <br />
     <input type="button" onclick="helloworld()" value="Click Here " />
