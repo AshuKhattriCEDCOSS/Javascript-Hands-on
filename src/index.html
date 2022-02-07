@@ -405,16 +405,29 @@ function compareEquality(a, b) {
   }
   return "Not Equal";
 }
-// Setup
-function compareEquality(a, b) {
-  if (a === b) { // Change this line
-    return "Equal";
+compareEquality(10, "10");
+
+//Comparison with the Inequality Operator
+
+function testNotEqual(val) {
+  if (val!=99) { // Change this line
+    return "Not Equal";
   }
-  return "Not Equal";
+  return "Equal";
 }
 
-compareEquality(10, "10");
-compareEquality(10, "10");
+testNotEqual(99);
+
+// Comparison with the Strict Inequality Operator
+
+
+function testStrictNotEqual(val) {
+  if (val!==17) { 
+    return "Not Equal";
+  }
+  return "Equal";
+}
+testStrictNotEqual(17);
     </script>
     <br />
     <input type="button" onclick="helloworld()" value="Click Here " />
