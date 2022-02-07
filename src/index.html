@@ -485,6 +485,24 @@ function testLessThan(val) {
 
 testLessThan(0);
 testLessThan(24);
+
+
+//Comparison with the Less Than Or Equal To Operator
+
+function testLessOrEqual(val) {
+  if (val<=12) {  // Change this line
+    return "Smaller Than or Equal to 12";
+  }
+
+  if (val<=24) {  // Change this line
+    return "Smaller Than or Equal to 24";
+  }
+
+  return "More Than 24";
+}
+
+testLessOrEqual(0);
+testLessOrEqual(23);
     </script>
     <br />
     <input type="button" onclick="helloworld()" value="Click Here " />
